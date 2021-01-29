@@ -48,12 +48,12 @@ function checkGameStatus() {
         celldivs[0].classList.add('won');
         celldivs[1].classList.add('won');
         celldivs[2].classList.add('won');
-    } else if (middleLeft && middleLeft == middleMiddle && middleLeft == middleRight) {
+    } else if (middleLeft && middleLeft === middleMiddle && middleLeft === middleRight) {
         handleWin(middleLeft);
         celldivs[3].classList.add('won');
         celldivs[4].classList.add('won');
         celldivs[5].classList.add('won');
-    } else if (bottomLeft && bottomLeft == bottomMiddle && bottomRight) {
+    } else if (bottomLeft && bottomLeft === bottomMiddle && bottomLeft === bottomRight) {
         handleWin(bottomLeft);
         celldivs[6].classList.add('won');
         celldivs[7].classList.add('won');
